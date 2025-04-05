@@ -1,0 +1,99 @@
+jshell> #Format Specifiers in Java
+|  Error:
+|  illegal character: '#'
+|  #Format Specifiers in Java
+|  ^
+|  Error:
+|  ';' expected
+|  #Format Specifiers in Java
+|                       ^
+
+jshell> System.out.println("Hello %s", "Himanshu");
+|  Error:
+|  no suitable method found for println(java.lang.String,java.lang.String)
+|      method java.io.PrintStream.println() is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(boolean) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(char) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(int) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(long) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(float) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(double) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(char[]) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(java.lang.String) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(java.lang.Object) is not applicable
+|        (actual and formal argument lists differ in length)
+|  System.out.println("Hello %s", "Himanshu");
+|  ^----------------^
+
+jshell> System.out.printf("Hello %s", "Himanshu");
+Hello Himanshu$1 ==> java.io.PrintStream@3327bd23
+
+jshell> System.out.println("Hello %s", "Himanshu").println();
+|  Error:
+|  no suitable method found for println(java.lang.String,java.lang.String)
+|      method java.io.PrintStream.println() is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(boolean) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(char) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(int) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(long) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(float) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(double) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(char[]) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(java.lang.String) is not applicable
+|        (actual and formal argument lists differ in length)
+|      method java.io.PrintStream.println(java.lang.Object) is not applicable
+|        (actual and formal argument lists differ in length)
+|  System.out.println("Hello %s", "Himanshu").println();
+|  ^----------------^
+
+jshell> System.out.printf("Hello %s", "Himanshu").println();
+Hello Himanshu
+
+jshell> System.out.printf("Hello %s", "Vivek").println();
+Hello Vivek
+
+jshell> String d = "Integer format specifier";
+d ==> "Integer format specifier"
+
+jshell> String f = "Floating format Specifier",
+   ...> String d1 = "Integer format Specifier",
+   ...> String c =  "Character format Sepcifier",
+   ...> String s = "String format specifier";
+|  Error:
+|  ';' expected
+|  String d1 = "Integer format Specifier",
+|        ^
+
+jshell> System.out.printf("%f + %f + %f = %f", 10,20,30,20+30+10);
+|  Exception java.util.IllegalFormatConversionException: f != java.lang.Integer
+|        at Formatter$FormatSpecifier.failConversion (Formatter.java:4515)
+|        at Formatter$FormatSpecifier.printFloat (Formatter.java:3079)
+|        at Formatter$FormatSpecifier.print (Formatter.java:3027)
+|        at Formatter.format (Formatter.java:2791)
+|        at PrintStream.implFormat (PrintStream.java:1367)
+|        at PrintStream.format (PrintStream.java:1346)
+|        at PrintStream.printf (PrintStream.java:1245)
+|        at (#5:1)
+
+jshell> System.out.printf("%f + %f + %f = %f", 10.0,20.0,30.0,20.0+30.00+10.0);
+10.000000 + 20.000000 + 30.000000 = 60.000000$6 ==> java.io.PrintStream@3327bd23
+
+jshell> System.out.printf("%f + %f + %f = %f", 10.0,20.0,30.0,20.0+30.00+10.0).println();
+10.000000 + 20.000000 + 30.000000 = 60.000000
