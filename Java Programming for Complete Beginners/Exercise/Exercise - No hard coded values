@@ -1,0 +1,17 @@
+jshell> #Exercise 3 - No Printing Hard coded values
+|  Error:
+|  illegal character: '#'
+|  #Exercise 3 - No Printing Hard coded values
+|  ^
+
+jshell> System.out.printf("%d+%d+%d=%d",5,6,7,5+6+7);
+5+6+7=18$9 ==> java.io.PrintStream@66480dd7
+
+jshell> System.out.printf("%d+%d+%d=%d",5,6,7,5+6+7).println():
+|  Error:
+|  ';' expected
+|  System.out.printf("%d+%d+%d=%d",5,6,7,5+6+7).println():
+|                                                        ^
+
+jshell> System.out.printf("%d+%d+%d=%d",5,6,7,5+6+7).println();
+5+6+7=18
