@@ -1,0 +1,79 @@
+jshell> #printing multiples of code in jshell
+|  Error:
+|  illegal character: '#'
+|  #printing multiples of code in jshell
+|  ^
+|  Error:
+|  ';' expected
+|  #printing multiples of code in jshell
+|                        ^
+
+jshell> int i,j;
+i ==> 0
+j ==> 0
+
+jshell> i = 10;j=23;
+i ==> 10
+j ==> 23
+
+jshell> i=20,
+   ...> j=24;
+|  Error:
+|  ';' expected
+|  i=20,
+|      ^
+
+jshell> int i = 23,
+   ...> j = 233;
+i ==> 23
+j ==> 233
+
+jshell> System.
+   ...> out.
+   ...> println(
+   ...> "Hello world!"
+   ...> );
+Hello world!
+
+jshell> System.out.println
+|  Error:
+|  cannot find symbol
+|    symbol:   variable println
+|  System.out.println
+|  ^----------------^
+
+jshell> if(true)
+   ...> {
+   ...>     i = 10,
+   ...>     j = 20
+   ...> }
+|  Error:
+|  ';' expected
+|      i = 10,
+|            ^
+|  Error:
+|  ';' expected
+|      j = 20
+|            ^
+
+jshell> if(true)
+   ...> {
+   ...>     i = 10,
+   ...>     j = 20;
+   ...> }
+|  Error:
+|  ';' expected
+|      i = 10,
+|            ^
+
+jshell> if(true)
+   ...> {
+   ...>     i = 10;
+   ...>     j = 20;
+   ...> }
+
+jshell> j
+j ==> 20
+
+jshell> i
+i ==> 10
