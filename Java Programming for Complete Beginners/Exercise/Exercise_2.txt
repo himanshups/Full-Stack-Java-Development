@@ -1,0 +1,52 @@
+1) Print Hello World:
+2) Print 5*3 as is
+3) Print calculated value of 5*3
+4) How to print Mathematical table of 5 now?
+5) Print Number of seconds in a day using System.out.println?
+6) Syntax revision: 
+================================
+         Mine Answers 
+================================
+jshell> System.out.println("Hello World");
+Hello World
+
+jshell> System.out.println("5*3);
+|  Error:
+|  unclosed string literal
+|  System.out.println("5*3);
+|                     ^
+
+jshell> System.out.println("5*3");
+5*3
+
+jshell> System.out.println(5*3);
+15
+
+jshell> System.out.println("5*1=5");
+5*1=5
+
+jshell> System.out.println("
+|  Error:
+|  unclosed string literal
+|  System.out.println("
+|                     ^
+
+jshell> System.out.println("5*1=5");
+5*1=5
+
+jshell> System.out.println("5*2=10");
+5*2=10
+
+jshell> etc
+|  Error:
+|  cannot find symbol
+|    symbol:   variable etc
+|  etc
+|  ^-^
+
+jshell> System.out.println(24*60*60);
+86400
+
+================================
+         Instructors Answers 
+================================
