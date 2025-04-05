@@ -1,0 +1,11 @@
+============= Start of the Exercise =======================
+
+Q1:) Write an Expression to calculate no of minutes in a day:
+
+Ans: 24*60 = 1440
+
+Q2:) Write an Expression to calculate no of seconds in a day:
+
+Ans: 24*60*60 = 86400
+
+======= End of the Exercise ================================
