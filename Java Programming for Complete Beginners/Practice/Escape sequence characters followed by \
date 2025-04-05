@@ -1,0 +1,66 @@
+jshell> #Printing escape characters in jshell
+|  Error:
+|  illegal character: '#'
+|  #Printing escape characters in jshell
+|  ^
+|  Error:
+|  ';' expected
+|  #Printing escape characters in jshell
+|                             ^
+
+jshell> System.out.println("hello\nworld);
+|  Error:
+|  unclosed string literal
+|  System.out.println("hello\nworld);
+|                     ^
+
+jshell> System.out.println("hello\nworld");
+hello
+world
+
+jshell> System.out.println("Hello\n \tworld");
+Hello
+        world
+
+jshell> System.out.println("Hello
+|  Error:
+|  unclosed string literal
+|  System.out.println("Hello
+|                     ^
+
+jshell> System.out.println("hello "world");
+|  Error:
+|  ')' or ',' expected
+|  System.out.println("hello "world");
+|                             ^
+
+jshell> System.out.println("hello \" world);
+|  Error:
+|  unclosed string literal
+|  System.out.println("hello \" world);
+|                     ^
+
+jshell> System.out.println("Hello \" world");
+Hello " world
+
+jshell> System.out.println("Hello \world
+|  Error:
+|  illegal escape character
+|  System.out.println("Hello \world
+|                             ^
+|  Error:
+|  unclosed string literal
+|  System.out.println("Hello \world
+|                     ^
+
+jshell> System.out.println("hello \ world");
+|  Error:
+|  illegal escape character
+|  System.out.println("hello \ world");
+|                             ^
+
+jshell> System.out.println("Hello \\ world");
+Hello \ world
+
+jshell> System.out.println("Hello \\\\ world!");
+Hello \\ world!
