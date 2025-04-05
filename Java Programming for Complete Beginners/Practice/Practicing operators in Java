@@ -1,0 +1,42 @@
+C:\Users\Admin>jshell
+|  Welcome to JShell -- Version 21.0.6
+|  For an introduction type: /help intro
+
+jshell> 2*2+230
+$1 ==> 234
+
+jshell> 2*2
+$2 ==> 4
+
+jshell> 2+2
+$3 ==> 4
+
+jshell> 2/2
+$4 ==> 1
+
+jshell> 2-2
+$5 ==> 0
+
+jshell> 2%3
+$6 ==> 2
+
+jshell> 3%2
+$7 ==> 1
+
+jshell> -3%2
+$8 ==> -1
+
+jshell> 3%-2
+$9 ==> 1
+
+jshell> 2+3*3
+$10 ==> 11
+
+jshell> 3*3+5
+$11 ==> 14
+
+jshell> (3*4)/2
+$12 ==> 6
+
+jshell> (2+3)+32
+$13 ==> 37
