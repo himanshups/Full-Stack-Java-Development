@@ -1,0 +1,33 @@
+ctrl + E = move to the end!
+ctrl + A = move to the start of th line!
+ctrl + R = serch the commands
+up & donw arrows = > to search in command history 
+===================================
+Practice:
+===================================
+jshell> // Java Jshell shortcuts & multiples lines & varialbes
+
+jshell> System.out.println("Hello world!");
+Hello world!
+
+jshell> System.out.println("Hello world!");
+Hello world!
+
+jshell> // Java Jshell shortcuts & multiples
+ lines & varialbes
+
+jshell> System.out.println("ctrl E => to mov
+e at the end & ctrl A to move the cursor to
+the start");
+ctrl E => to move at the end & ctrl A to move the cursor to the start
+
+jshell> int i =
+   ...> 20;
+i ==> 20
+
+jshell> int i = 20
+i ==> 20
+
+jshell> i = 30;int j = 20;
+i ==> 30
+j ==> 20
