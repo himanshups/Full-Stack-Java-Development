@@ -1,0 +1,95 @@
+Primitive Data Types in Java:
+
+1) Number = byte, short,int , long.
+2) Decimals = float, Double.
+3) character = char
+4) boolean = boolean;
+
+======================================
+
+jshell> int i;
+i ==> 0
+
+jshell> byte j;
+j ==> 0
+
+jshell> short k;
+k ==> 0
+
+jshell> int l;
+l ==> 0
+
+jshell> long f;
+f ==> 0
+
+jshell> float fl= 4.0f;
+fl ==> 4.0
+
+jshell> float flt = 4.5f;
+flt ==> 4.5
+
+jshell> float flting = 4.5;
+|  Error:
+|  incompatible types: possible lossy conversion from double to float
+|  float flting = 4.5;
+|                 ^-^
+
+jshell> double dbl = 3.3f;
+dbl ==> 3.299999952316284
+
+jshell> double dbling = 3.5;
+dbling ==> 3.5
+
+jshell> float decimalNumber = 2.9f;
+decimalNumber ==> 2.9
+
+jshell> char ch = 'A';
+ch ==> 'A'
+
+jshell> char ch = 'DE';
+|  Error:
+|  unclosed character literal
+|  char ch = 'DE';
+|            ^
+
+jshell> char ch = 'FE';
+|  Error:
+|  unclosed character literal
+|  char ch = 'FE';
+|            ^
+
+jshell> boolean isNumber = false;
+isNumber ==> false
+
+jshell> boolean isNumber = true;
+isNumber ==> true
+
+jshell> boolean isNumber = True;
+|  Error:
+|  cannot find symbol
+|    symbol:   variable True
+|  boolean isNumber = True;
+|                     ^--^
+
+jshell> boolean isNumber = 0;
+|  Error:
+|  incompatible types: int cannot be converted to boolean
+|  boolean isNumber = 0;
+|                     ^
+
+jshell> boolean isNumber = "0";
+|  Error:
+|  incompatible types: java.lang.String cannot be converted to boolean
+|  boolean isNumber = "0";
+|                     ^-^
+
+jshell> boolean isNumber = true;
+isNumber ==> true
+
+jshell> boolean isNumber = false;
+isNumber ==> false
+
+jshell> int number1 = (int) "himanshu";
+|  Error:
+|  incompatible types: java.lang.String cannot be converted to int
+|  int number1 = (int) "himanshu";
