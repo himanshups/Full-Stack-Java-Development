@@ -1,0 +1,79 @@
+Naming  a variable in Java: 
+
+1) The variable should contain letters, digits , underscore(_) & dollar($)
+2) The variable should not have starting value as digit.
+3) The variable should not be named as "keyword"
+4) The variable name should not have space in between them( ) ;
+5) The variable naming should be done in camelCase: noGoalsAchieve:
+
+jshell> int test1-test
+|  Error:
+|  ';' expected
+|  int test1-test;
+|           ^
+
+jshell> int 2number
+|  Error:
+|  '.class' expected
+|  int 2number
+|      ^
+|  Error:
+|  not a statement
+|  int 2number
+|       ^----^
+|  Error:
+|  unexpected type
+|    required: value
+|    found:    class
+|  int 2number
+|  ^--^
+
+jshell> int noGoalsAchieved
+noGoalsAchieved ==> 0
+
+jshell> int NoGoalsAchieved = 0;
+NoGoalsAchieved ==> 0
+
+jshell> #Naming a variable has many convention to follow.
+|  Error:
+|  illegal character: '#'
+|  #Naming a variable has many convention to follow.
+|  ^
+|  Error:
+|  ';' expected
+|  #Naming a variable has many convention to follow.
+|                    ^
+
+jshell> int letter_underscore_dollar;
+letter_underscore_dollar ==> 0
+
+jshell> int dollar$Invincible
+dollar$Invincible ==> 0
+
+jshell> int while;
+|  Error:
+|  '.class' expected
+|  int while;
+|      ^
+|  Error:
+|  '(' expected
+|  int while;
+|           ^
+|  Error:
+|  unexpected type
+|    required: value
+|    found:    class
+|  int while;
+|  ^--^
+|  Error:
+|  missing return statement
+|  int while;
+|  ^--------^
+
+jshell> int dollar invincible
+|  Error:
+|  ';' expected
+|  int dollar invincible;
+|            ^
+
+jshell
