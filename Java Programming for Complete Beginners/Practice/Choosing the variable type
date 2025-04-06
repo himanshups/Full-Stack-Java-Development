@@ -1,0 +1,71 @@
+Choosing the variable type depends on the situations and the value it can store within it.
+
+===============================================
+
+C:\Users\Admin>jshell
+|  Welcome to JShell -- Version 21.0.6
+|  For an introduction type: /help intro
+
+jshell> short noOfGoals:
+|  Error:
+|  ';' expected
+|  short noOfGoals:
+|                 ^
+
+jshell> short noOfGoals;
+noOfGoals ==> 0
+
+jshell> noOfGoals++;
+$2 ==> 0
+
+jshell> noOfGoals++;
+$3 ==> 1
+
+jshell> long populationOftheWorld:
+|  Error:
+|  ';' expected
+|  long populationOftheWorld:
+|                           ^
+
+jshell> long populationOfTheWorld;
+populationOfTheWorld ==> 0
+
+jshell> double averageOfNumbers;
+averageOfNumbers ==> 0.0
+
+jshell> char ch = 'A'
+ch ==> 'A'
+
+jshell> char ch = 'B'
+ch ==> 'B'
+
+jshell> char gradesOfTheSchool = 'C'
+gradesOfTheSchool ==> 'C'
+
+jshell> char gradesOfTheSchool = 'A'
+gradesOfTheSchool ==> 'A'
+
+jshell> boolean isTrue = true;
+isTrue ==> true
+
+jshell> boolean isFalse = false;
+isFalse ==> false
+
+jshell> boolean isPrime = true;
+isPrime ==> true
+
+jshell> boolean isItRainingToday = false;
+isItRainingToday ==> false
+
+jshell> boolean areYouEnjoyingTheCourse = false;
+areYouEnjoyingTheCourse ==> false
+
+jshell> lol
+|  Error:
+|  cannot find symbol
+|    symbol:   variable lol
+|  lol
+|  ^-^
+
+jshell> boolean areYouEnjoyingTheCourse = true;
+areYouEnjoyingTheCourse ==> true
