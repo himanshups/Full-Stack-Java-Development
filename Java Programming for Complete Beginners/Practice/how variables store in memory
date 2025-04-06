@@ -1,0 +1,57 @@
+jshell> int number1 = 5
+number1 ==> 5
+
+jshell> int number2 = number1
+number2 ==> 5
+
+jshell> int number1 = "himanshu"
+|  Error:
+|  incompatible types: java.lang.String cannot be converted to int
+|  int number1 = "himanshu";
+|                ^--------^
+
+jshell> int number = 5.5;
+|  Error:
+|  incompatible types: possible lossy conversion from double to int
+|  int number = 5.5;
+|               ^-^
+
+jshell> double number = 2.9
+number ==> 2.9
+
+jshell> int number3 = number
+|  Error:
+|  incompatible types: possible lossy conversion from double to int
+|  int number3 = number;
+|                ^----^
+
+jshell> int a = 10
+a ==> 10
+
+jshell> int b = 20
+b ==> 20
+
+jshell> a = 100
+a ==> 100
+
+jshell> System.out.printf("%d+%d=%d",a,b,a+b
+);
+100+20=120$7 ==> java.io.PrintStream@3b084709
+
+jshell> System.out.printf("%d+%d=%d",a,b,a+b).println();
+100+20=120
+
+jshell> int c = a+b;
+c ==> 120
+
+jshell> a = c;
+a ==> 120
+
+jshell> a
+a ==> 120
+
+jshell> b
+b ==> 20
+
+jshell> c
+c ==> 120
