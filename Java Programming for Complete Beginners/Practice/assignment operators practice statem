@@ -1,0 +1,49 @@
+jshell> // Java Assignment Operators with
+
+jshell> // decrement, increment and compound assignment operators.
+
+jshell>
+
+jshell> int number = 10;
+number ==> 10
+
+jshell> number++;
+$2 ==> 10
+
+jshell> number
+number ==> 11
+
+jshell> number--;
+$4 ==> 11
+
+jshell> number
+number ==> 10
+
+jshell> ++number;
+$6 ==> 11
+
+jshell> number
+number ==> 11
+
+jshell> -- number;
+$8 ==> 10
+
+jshell> ++number
+$9 ==> 11
+
+jshell> int i = 10;
+i ==> 10
+
+jshell> i+=10;
+$11 ==> 20
+
+jshell> i-=20;
+$12 ==> 0
+
+jshell> i/=20;
+$13 ==> 0
+
+jshell> i*=20;
+$14 ==> 0
+
+jshell>
