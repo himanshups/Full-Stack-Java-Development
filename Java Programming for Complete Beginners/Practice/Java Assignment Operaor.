@@ -1,0 +1,72 @@
+jshell> // Java Assignment Operator
+
+jshell> int i = 10;
+i ==> 10
+
+jshell> int j = 20;
+j ==> 20
+
+jshell> i = i+j;
+i ==> 30
+
+jshell> j = i+1;
+j ==> 31
+
+jshell> i++;
+$5 ==> 30
+
+jshell> i=i+1;
+i ==> 32
+
+jshell> i = i+1
+i ==> 33
+
+jshell> i = i+1
+i ==> 34
+
+jshell> i = i*2
+i ==> 68
+
+jshell> i = i*3
+i ==> 204
+
+jshell> 2= 10+i
+|  Error:
+|  unexpected type
+|    required: variable
+|    found:    value
+|  2= 10+i
+|  ^
+
+jshell> i = i - i;
+i ==> 0
+
+jshell> i = i+1;
+i ==> 1
+
+jshell> i = i+1;
+i ==> 2
+
+jshell> i = i + 1
+i ==> 3
+
+jshell> i = i+1;
+i ==> 4
+
+jshell> i = i-1;
+i ==> 3
+
+jshell> i = i-1'
+|  Error:
+|  unclosed character literal
+|  i = i-1'
+|         ^
+
+jshell> i= i-1;
+i ==> 2
+
+jshell> i = i -1;
+i ==> 1
+
+jshell> i = i-1;
+i ==> 0
