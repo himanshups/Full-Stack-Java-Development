@@ -1,0 +1,48 @@
+
+jshell> 1+2
+$1 ==> 3
+
+jshell> "1"+2
+$2 ==> "12"
+
+jshell> "1"+2+3
+$3 ==> "123"
+
+jshell> char ch = 'A';
+ch ==> 'A'
+
+jshell> char sh = 'B';
+sh ==> 'B'
+
+jshell> char dh = 'C';
+dh ==> 'C'
+
+jshell>
+
+jshell> System.out.println("ch,sh, dh");
+ch,sh, dh
+
+jshell> System.out.println("%c%c%c"+a,b,c);
+|  Error:
+|  cannot find symbol
+|    symbol:   variable a
+|  System.out.println("%c%c%c"+a,b,c);
+|                              ^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable b
+|  System.out.println("%c%c%c"+a,b,c);
+|                                ^
+|  Error:
+|  cannot find symbol
+|    symbol:   variable c
+|  System.out.println("%c%c%c"+a,b,c);
+|                                  ^
+
+jshell> System.out.printf("%c%c%c"+sh,ch,dh)
+.println();
+AC|  Exception java.util.MissingFormatArgumentException: Format specifier '%c'
+|        at Formatter.format (Formatter.java:2790)
+|        at PrintStream.implFormat (PrintStream.java:1367)
+|        at PrintStream.format (PrintStream.java:1346)
+|        at PrintStream.printf (PrintStream.java:1245)
